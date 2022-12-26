@@ -1,0 +1,16 @@
+{
+  "name": "builder",
+  "version": "1.0.0",
+  "bin": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bson": "^4.7.0",
+    "commander": "^9.4.1",
+    "pkg": "^5.8.0",
+    "terser": "^5.16.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "compile": "yarn build && pkg . --out-path out/ --compress GZip"
+  }
+}

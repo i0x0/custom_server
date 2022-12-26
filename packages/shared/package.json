@@ -1,0 +1,10 @@
+{
+  "name": "shared",
+  "packageManager": "yarn@3.3.1",
+  "dependencies": {
+    "pkg": "^5.8.0"
+  },
+  "scripts": {
+    "compile": "tsc && pkg . --out-path dist/"
+  }
+}
